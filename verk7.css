@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.left, .right {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+iframe {
+    max-width: 100%; 
+    height: auto;   
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.body-bg {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 0, 0));
+    color: white;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.davidmewing{
+    font-family: Oswald;
+}
+
+.image-container {
+    position: relative;
+    display: block; 
+    width: 100%; 
+    max-width: 1280px; 
+    margin: auto; 
+}
+
+.image-container img {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: rgb(234, 0, 0); 
+    font-size: 108px; 
+    font-family: "Oswald";
+    text-shadow: 
+        0px 0px 10px rgba(0, 0, 0, 0.9),  
+        0 0 2px rgba(255, 165, 0, 1);  
+    text-align: center; 
+    z-index: 1; 
+    white-space: nowrap; 
+}
+
+@media (max-width: 767px) {
+    .text-overlay {
+        font-size: 72px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        font-size: 48px; 
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #840000;
+}
+  
+.footer-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+  
+.footer-text nav {
+    margin-bottom: 20px;
+}
+  
+.footer-map {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.footer-map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+}
+  
+h4 {
+    margin-bottom: 10px;
+}
+  
+ul, dl {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
